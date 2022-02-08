@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myLayout"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/edtCopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Copy text"/>
+        <EditText
+            android:id="@+id/edtPaste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paste text"/>
+        
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Copy text"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginLeft="30dp"
+            />
+        <Button
+            android:id="@+id/btnPaste"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Paste text"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginLeft="100dp"
+            />
+        </LinearLayout>
+</RelativeLayout>
